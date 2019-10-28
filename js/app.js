@@ -1,3 +1,9 @@
+$(function() { loadMap(); });
+
+$.getJSON("https://raw.githubusercontent.com/43D/Web/master/LeEco/json/leMax2.json", function(json) {
+    main(json)
+});
+
 function loadMap() {
     $('#brazil-map').JSMaps({
         map: 'brazil',
@@ -17,7 +23,34 @@ function removeMap() {
     $('#brazil-map').empty();
 }
 
-$(function() { loadMap(); });
+function main(json) {}
+
+// Set Range Number
+$('.rangeNumber').html($("#myRange").val());
+$('#myRange').on('input', function() {
+    $('.rangeNumber').html($("#myRange").val());
+    //set json
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 function setColor(hex, estado) {
     return this;
