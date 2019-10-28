@@ -11,9 +11,12 @@ body {
     color: #fff;
 }
 
+footer {
+    background-color: #000;
+}
 
-/*
-* Range Style
+
+/* Range Style
 */
 
 .slider {
