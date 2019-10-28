@@ -1,6 +1,6 @@
 $(function() { loadMap(); });
 
-$.getJSON("https://raw.githubusercontent.com/43D/Web/master/LeEco/json/leMax2.json", function(json) {
+$.getJSON("https://raw.githubusercontent.com/43D/infographic_ibge/master/js/ibge.json", function(json) {
     main(json)
 });
 
@@ -11,7 +11,7 @@ function loadMap() {
         "strokeWidth": 2,
         "abbreviationColor": '#fff',
         "abbreviationFontSize": 9,
-        "displayAbbreviations": false,
+        "displayAbbreviations": true,
         "displayAbbreviationOnDisabledStates": false,
         "stateClickAction": "",
         "preloaderText": "Carregando mapa...",

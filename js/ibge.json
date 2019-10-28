@@ -1,564 +1,1077 @@
 {
-    "name": "LeEco Le Max 2",
-    "deviceModel": 0,
-    "deviceHardware": 0,
-    "deviceSystem": 0,
-    "resultId": 0,
-    "model": [{
-            "model": "X820",
-            "region": "CN"
+    "name": "Demografia brasileira",
+    "source": "IBGE 2010",
+    "sourceLink": "https://www.ibge.gov.br/estatisticas/multidominio/condicoes-de-vida-desigualdade-e-pobreza/9662-censo-demografico-2010.html",
+    "menu": [{
+            "name": "População brasileira",
+            "range": true,
+            "rangeStart": 1970,
+            "rangeEnd": 2010,
+            "id": "0"
         },
         {
-            "model": "X821",
-            "region": "IN"
+            "name": "População por sexo",
+            "range": true,
+            "rangeStart": 1970,
+            "rangeEnd": 2010,
+            "id": "1"
         }
     ],
-    "hardware": [{
-        "CPU": "Snapdragon 820 MSM8996",
-        "GPU": "Adreno 530",
-        "screen": "5.7'",
-        "resolution": "1440x2560",
-        "RAM": "4GB",
-        "ROM": "32GB"
-    }],
-    "system": [{
-        "system": "Android",
-        "version": "9",
-        "SDK": "28",
-        "kernel": "BlackScreen-OC-6.6.1",
-        "kernelVersion": "3.18.140",
-        "bluid": "AOSiP",
-        "bluidVersion": "9.0-Official-x2-20190807"
-    }, {
-        "system": "Android",
-        "version": "10",
-        "SDK": "29",
-        "kernel": "",
-        "kernelVersion": "",
-        "bluid": "",
-        "bluidVersion": ""
-    }],
-    "result": [{
-        "govenador": [{
-                "name": "Alucard",
-                "antutu": [{
-                    "score": 129378,
-                    "cpu": 38136,
-                    "cpuScore": [{
-                        "mat": 9081,
-                        "com": 4418,
-                        "multi": 24637
-                    }],
-                    "gpu": 60522,
-                    "gpuScore": [{
-                        "marooned": 7192,
-                        "coastline": 23275,
-                        "refinery": 30055
-                    }],
-                    "ux": 26087,
-                    "uxScore": [{
-                        "security": 3918,
-                        "process": 3972,
-                        "picture": 6152,
-                        "user": 12045
-                    }],
-                    "mem": 4633
-                }]
+
+
+    "demo": [{
+        "year": ["1970", "1980", "1990", "2000", "2010"],
+        "data": [{
+                "date": [{
+                        "type": "BR",
+                        "dateOficial": 1970,
+                        "all": 94508583,
+                        "urban": 52904744,
+                        "countryside": 41603839
+                    },
+                    {
+                        "type": "N",
+                        "all": 4188313,
+                        "urban": 1784223,
+                        "countryside": 2404090,
+                        "state": [{
+                                "type": "RO",
+                                "all": 116620,
+                                "urban": 60541,
+                                "countryside": 56079
+                            },
+                            {
+                                "type": "AC",
+                                "all": 218006,
+                                "urban": 60557,
+                                "countryside": 157449
+                            },
+                            {
+                                "type": "AM",
+                                "all": 960934,
+                                "urban": 409278,
+                                "countryside": 551656
+                            },
+                            {
+                                "type": "RR",
+                                "all": 41638,
+                                "urban": 17929,
+                                "countryside": 23709
+                            },
+                            {
+                                "type": "PA",
+                                "all": 2197072,
+                                "urban": 1037340,
+                                "countryside": 1159732
+                            },
+                            {
+                                "type": "AP",
+                                "all": 116480,
+                                "urban": 63785,
+                                "countryside": 52695
+                            },
+                            {
+                                "type": "TO",
+                                "all": 537563,
+                                "urban": 134793,
+                                "countryside": 402770
+                            }
+                        ]
+                    },
+                    {
+                        "type": "NO",
+                        "all": 28675110,
+                        "urban": 11980937,
+                        "countryside": 16694173,
+                        "state": [{
+                                "type": "MA",
+                                "all": 3037135,
+                                "urban": 771790,
+                                "countryside": 2265345
+                            },
+                            {
+                                "type": "PI",
+                                "all": 1734894,
+                                "urban": 561081,
+                                "countryside": 1173813
+                            },
+                            {
+                                "type": "CE",
+                                "all": 4491590,
+                                "urban": 1811202,
+                                "countryside": 2680388
+                            },
+                            {
+                                "type": "RN",
+                                "all": 1611606,
+                                "urban": 751064,
+                                "countryside": 860542
+                            },
+                            {
+                                "type": "PB",
+                                "all": 2445419,
+                                "urban": 1019338,
+                                "countryside": 1426081
+                            },
+                            {
+                                "type": "PE",
+                                "all": 5253901,
+                                "urban": 2862489,
+                                "countryside": 2391412
+                            },
+                            {
+                                "type": "AL",
+                                "all": 1606174,
+                                "urban": 642208,
+                                "countryside": 963966
+                            },
+                            {
+                                "type": "SE",
+                                "all": 911251,
+                                "urban": 421358,
+                                "countryside": 489893
+                            },
+                            {
+                                "type": "BA",
+                                "all": 7583140,
+                                "urban": 3140407,
+                                "countryside": 4442733
+                            }
+                        ]
+                    },
+
+                    {
+                        "type": "SE",
+                        "all": 40331969,
+                        "urban": 29347170,
+                        "countryside": 10984799,
+                        "state": [{
+                                "type": "MG",
+                                "all": 11645095,
+                                "urban": 6167113,
+                                "countryside": 5477982
+                            },
+                            {
+                                "type": "ES",
+                                "all": 1617857,
+                                "urban": 734756,
+                                "countryside": 883101
+                            },
+                            {
+                                "type": "RJ",
+                                "all": 9110324,
+                                "urban": 8013057,
+                                "countryside": 1097267
+                            },
+                            {
+                                "type": "SP",
+                                "all": 17958693,
+                                "urban": 14432244,
+                                "countryside": 3526449
+                            }
+                        ]
+
+                    },
+                    {
+                        "type": "S",
+                        "all": 16683551,
+                        "urban": 7434196,
+                        "countryside": 9249355,
+                        "state": [{
+                                "type": "PR",
+                                "all": 6997682,
+                                "urban": 2546899,
+                                "countryside": 4450783
+                            },
+                            {
+                                "type": "SC",
+                                "all": 2930411,
+                                "urban": 1266709,
+                                "countryside": 1663702
+                            },
+                            {
+                                "type": "RS",
+                                "all": 6755458,
+                                "urban": 3620588,
+                                "countryside": 3134870
+                            }
+                        ]
+                    },
+                    {
+                        "type": "CO",
+                        "all": 4629640,
+                        "urban": 2358218,
+                        "countryside": 2271422,
+                        "state": [{
+                                "type": "MS",
+                                "all": 1010731,
+                                "urban": 460137,
+                                "countryside": 550594
+                            },
+                            {
+                                "type": "MT",
+                                "all": 612887,
+                                "urban": 239524,
+                                "countryside": 373363
+                            },
+                            {
+                                "type": "GO",
+                                "all": 2460007,
+                                "urban": 1134242,
+                                "countryside": 1325765
+                            },
+                            {
+                                "type": "DF",
+                                "all": 546015,
+                                "urban": 524315,
+                                "countryside": 21700
+                            }
+                        ]
+
+                    }
+                ]
             },
             {
-                "name": "Nightmare",
-                "antutu": [{
-                    "score": 115828,
-                    "cpu": 37474,
-                    "cpuScore": [{
-                        "mat": 8246,
-                        "com": 4416,
-                        "multi": 24812
-                    }],
-                    "gpu": 47505,
-                    "gpuScore": [{
-                        "marooned": 7161,
-                        "coastline": 16452,
-                        "refinery": 23892
-                    }],
-                    "ux": 26675,
-                    "uxScore": [{
-                        "security": 4087,
-                        "process": 4234,
-                        "picture": 6217,
-                        "user": 12137
-                    }],
-                    "mem": 4174
-                }]
+                "date": [{
+                        "type": "BR",
+                        "dateOficial": 1980,
+                        "all": 121150573,
+                        "urban": 82013375,
+                        "countryside": 39137198
+                    },
+                    {
+                        "type": "N",
+                        "all": 6767249,
+                        "urban": 3398897,
+                        "countryside": 3368352,
+                        "state": [{
+                                "type": "RO",
+                                "all": 503125,
+                                "urban": 239436,
+                                "countryside": 263689
+                            },
+                            {
+                                "type": "AC",
+                                "all": 306893,
+                                "urban": 135754,
+                                "countryside": 171139
+                            },
+                            {
+                                "type": "AM",
+                                "all": 1449135,
+                                "urban": 869020,
+                                "countryside": 580115
+                            },
+                            {
+                                "type": "RR",
+                                "all": 82018,
+                                "urban": 49622,
+                                "countryside": 32396
+                            },
+                            {
+                                "type": "PA",
+                                "all": 3507312,
+                                "urban": 1702403,
+                                "countryside": 1804909
+                            },
+                            {
+                                "type": "AP",
+                                "all": 180078,
+                                "urban": 106424,
+                                "countryside": 73654
+                            },
+                            {
+                                "type": "TO",
+                                "all": 738688,
+                                "urban": 296238,
+                                "countryside": 442450
+                            }
+                        ]
+                    },
+                    {
+                        "type": "NO",
+                        "all": 35419156,
+                        "urban": 17959640,
+                        "countryside": 17459516,
+                        "state": [{
+                                "type": "MA",
+                                "all": 4097231,
+                                "urban": 1296413,
+                                "countryside": 2800818
+                            },
+                            {
+                                "type": "PI",
+                                "all": 2188150,
+                                "urban": 931204,
+                                "countryside": 1256946
+                            },
+                            {
+                                "type": "CE",
+                                "all": 5380432,
+                                "urban": 2877555,
+                                "countryside": 2502877
+                            },
+                            {
+                                "type": "RN",
+                                "all": 1933126,
+                                "urban": 1140697,
+                                "countryside": 792429
+                            },
+                            {
+                                "type": "PB",
+                                "all": 2810032,
+                                "urban": 1479705,
+                                "countryside": 1330327
+                            },
+                            {
+                                "type": "PE",
+                                "all": 6244275,
+                                "urban": 3864285,
+                                "countryside": 2379990
+                            },
+                            {
+                                "type": "AL",
+                                "all": 2011875,
+                                "urban": 995344,
+                                "countryside": 1016531
+                            },
+                            {
+                                "type": "SE",
+                                "all": 1156642,
+                                "urban": 629415,
+                                "countryside": 527227
+                            },
+                            {
+                                "type": "BA",
+                                "all": 9597393,
+                                "urban": 4745022,
+                                "countryside": 4852371
+                            }
+                        ]
+                    },
+
+                    {
+                        "type": "SE",
+                        "all": 52580527,
+                        "urban": 43550664,
+                        "countryside": 9029863,
+                        "state": [{
+                                "type": "MG",
+                                "all": 13651852,
+                                "urban": 9185088,
+                                "countryside": 4466764
+                            },
+                            {
+                                "type": "ES",
+                                "all": 2063679,
+                                "urban": 1324701,
+                                "countryside": 738978
+                            },
+                            {
+                                "type": "RJ",
+                                "all": 11489797,
+                                "urban": 10546547,
+                                "countryside": 943250
+                            },
+                            {
+                                "type": "SP",
+                                "all": 25375199,
+                                "urban": 22494328,
+                                "countryside": 2880871
+                            }
+                        ]
+
+                    },
+                    {
+                        "type": "S",
+                        "all": 19380126,
+                        "urban": 12153971,
+                        "countryside": 7226155,
+                        "state": [{
+                                "type": "PR",
+                                "all": 7749752,
+                                "urban": 4566755,
+                                "countryside": 3182997
+                            },
+                            {
+                                "type": "SC",
+                                "all": 3687652,
+                                "urban": 2201350,
+                                "countryside": 1486302
+                            },
+                            {
+                                "type": "RS",
+                                "all": 7942722,
+                                "urban": 5385866,
+                                "countryside": 2556856
+                            }
+                        ]
+                    },
+                    {
+                        "type": "CO",
+                        "all": 7003515,
+                        "urban": 4950203,
+                        "countryside": 2053312,
+                        "state": [{
+                                "type": "MS",
+                                "all": 1401151,
+                                "urban": 939510,
+                                "countryside": 461641
+                            },
+                            {
+                                "type": "MT",
+                                "all": 1169812,
+                                "urban": 673069,
+                                "countryside": 496743
+                            },
+                            {
+                                "type": "GO",
+                                "all": 3229219,
+                                "urban": 2172965,
+                                "countryside": 1056254
+                            },
+                            {
+                                "type": "DF",
+                                "all": 1203333,
+                                "urban": 1164659,
+                                "countryside": 38674
+                            }
+                        ]
+
+                    }
+                ]
             },
             {
-                "name": "ElementalX",
-                "antutu": [{
-                    "score": 105063,
-                    "cpu": 29301,
-                    "cpuScore": [{
-                        "mat": 3066,
-                        "com": 2233,
-                        "multi": 24002
-                    }],
-                    "gpu": 49727,
-                    "gpuScore": [{
-                        "marooned": 9104,
-                        "coastline": 16651,
-                        "refinery": 23972
-                    }],
-                    "ux": 22235,
-                    "uxScore": [{
-                        "security": 1968,
-                        "process": 3462,
-                        "picture": 7043,
-                        "user": 9762
-                    }],
-                    "mem": 3800
-                }]
+                "date": [{
+                        "type": "BR",
+                        "dateOficial": 1991,
+                        "all": 146917459,
+                        "urban": 110875826,
+                        "countryside": 36041633
+                    },
+                    {
+                        "type": "N",
+                        "all": 10257266,
+                        "urban": 5931567,
+                        "countryside": 4325699,
+                        "state": [{
+                                "type": "RO",
+                                "all": 1130874,
+                                "urban": 658172,
+                                "countryside": 472702
+                            },
+                            {
+                                "type": "AC",
+                                "all": 417165,
+                                "urban": 258035,
+                                "countryside": 159130
+                            },
+                            {
+                                "type": "AM",
+                                "all": 2102901,
+                                "urban": 1501807,
+                                "countryside": 601094
+                            },
+                            {
+                                "type": "RR",
+                                "all": 215950,
+                                "urban": 139466,
+                                "countryside": 76484
+                            },
+                            {
+                                "type": "PA",
+                                "all": 5181570,
+                                "urban": 2609777,
+                                "countryside": 2571793
+                            },
+                            {
+                                "type": "AP",
+                                "all": 288690,
+                                "urban": 233515,
+                                "countryside": 55175
+                            },
+                            {
+                                "type": "TO",
+                                "all": 920116,
+                                "urban": 530795,
+                                "countryside": 389321
+                            }
+                        ]
+                    },
+                    {
+                        "type": "NO",
+                        "all": 42470225,
+                        "urban": 25753355,
+                        "countryside": 16716870,
+                        "state": [{
+                                "type": "MA",
+                                "all": 4929029,
+                                "urban": 1972008,
+                                "countryside": 2957021
+                            },
+                            {
+                                "type": "PI",
+                                "all": 2581215,
+                                "urban": 1366218,
+                                "countryside": 1214997
+                            },
+                            {
+                                "type": "CE",
+                                "all": 6362620,
+                                "urban": 4158059,
+                                "countryside": 2204561
+                            },
+                            {
+                                "type": "RN",
+                                "all": 2414121,
+                                "urban": 1668165,
+                                "countryside": 745956
+                            },
+                            {
+                                "type": "PB",
+                                "all": 3200677,
+                                "urban": 2051576,
+                                "countryside": 1149101
+                            },
+                            {
+                                "type": "PE",
+                                "all": 7122548,
+                                "urban": 5046535,
+                                "countryside": 2076013
+                            },
+                            {
+                                "type": "AL",
+                                "all": 2512991,
+                                "urban": 1481125,
+                                "countryside": 1031866
+                            },
+                            {
+                                "type": "SE",
+                                "all": 1491867,
+                                "urban": 1001940,
+                                "countryside": 489927
+                            },
+                            {
+                                "type": "BA",
+                                "all": 11855157,
+                                "urban": 7007729,
+                                "countryside": 4847428
+                            }
+                        ]
+                    },
+
+                    {
+                        "type": "SE",
+                        "all": 62660700,
+                        "urban": 55149437,
+                        "countryside": 7511263,
+                        "state": [{
+                                "type": "MG",
+                                "all": 15731961,
+                                "urban": 11776538,
+                                "countryside": 3955423
+                            },
+                            {
+                                "type": "ES",
+                                "all": 2598505,
+                                "urban": 1922828,
+                                "countryside": 675677
+                            },
+                            {
+                                "type": "RJ",
+                                "all": 12783761,
+                                "urban": 12177144,
+                                "countryside": 606617
+                            },
+                            {
+                                "type": "SP",
+                                "all": 31546473,
+                                "urban": 29272927,
+                                "countryside": 2273546
+                            }
+                        ]
+
+                    },
+                    {
+                        "type": "S",
+                        "all": 22117026,
+                        "urban": 16392710,
+                        "countryside": 5724316,
+                        "state": [{
+                                "type": "PR",
+                                "all": 8443299,
+                                "urban": 6192976,
+                                "countryside": 2250323
+                            },
+                            {
+                                "type": "SC",
+                                "all": 4538248,
+                                "urban": 3205600,
+                                "countryside": 1332648
+                            },
+                            {
+                                "type": "RS",
+                                "all": 9135479,
+                                "urban": 6994134,
+                                "countryside": 2141345
+                            }
+                        ]
+                    },
+                    {
+                        "type": "CO",
+                        "all": 9412242,
+                        "urban": 7648757,
+                        "countryside": 2271422,
+                        "state": [{
+                                "type": "MS",
+                                "all": 1778741,
+                                "urban": 1413095,
+                                "countryside": 365646
+                            },
+                            {
+                                "type": "MT",
+                                "all": 2022524,
+                                "urban": 1481073,
+                                "countryside": 541451
+                            },
+                            {
+                                "type": "GO",
+                                "all": 4012562,
+                                "urban": 3241119,
+                                "countryside": 771443
+                            },
+                            {
+                                "type": "DF",
+                                "all": 1598415,
+                                "urban": 1513470,
+                                "countryside": 84945
+                            }
+                        ]
+
+                    }
+                ]
             },
             {
-                "name": "SmartMax",
-                "antutu": [{
-                    "score": 97506,
-                    "cpu": 29396,
-                    "cpuScore": [{
-                        "mat": 2989,
-                        "com": 1712,
-                        "multi": 24695
-                    }],
-                    "gpu": 50246,
-                    "gpuScore": [{
-                        "marooned": 7886,
-                        "coastline": 18673,
-                        "refinery": 23687
-                    }],
-                    "ux": 14805,
-                    "uxScore": [{
-                        "security": 1503,
-                        "process": 1537,
-                        "picture": 5567,
-                        "user": 6198
-                    }],
-                    "mem": 3059
-                }]
+                "date": [{
+                        "type": "BR",
+                        "dateOficial": 2000,
+                        "all": 169590693,
+                        "urban": 137755550,
+                        "countryside": 31835143
+                    },
+                    {
+                        "type": "N",
+                        "all": 12893561,
+                        "urban": 9002962,
+                        "countryside": 3890599,
+                        "state": [{
+                                "type": "RO",
+                                "all": 1377792,
+                                "urban": 883048,
+                                "countryside": 494744
+                            },
+                            {
+                                "type": "AC",
+                                "all": 557226,
+                                "urban": 370018,
+                                "countryside": 187208
+                            },
+                            {
+                                "type": "AM",
+                                "all": 2813085,
+                                "urban": 2104290,
+                                "countryside": 708795
+                            },
+                            {
+                                "type": "RR",
+                                "all": 324152,
+                                "urban": 246732,
+                                "countryside": 77420
+                            },
+                            {
+                                "type": "PA",
+                                "all": 6189550,
+                                "urban": 4116378,
+                                "countryside": 2073172
+                            },
+                            {
+                                "type": "AP",
+                                "all": 475843,
+                                "urban": 423581,
+                                "countryside": 52262
+                            },
+                            {
+                                "type": "TO",
+                                "all": 1155913,
+                                "urban": 858915,
+                                "countryside": 296998
+                            }
+                        ]
+                    },
+                    {
+                        "type": "NO",
+                        "all": 47693253,
+                        "urban": 32929318,
+                        "countryside": 14763935,
+                        "state": [{
+                                "type": "MA",
+                                "all": 5642960,
+                                "urban": 3357898,
+                                "countryside": 2285062
+                            },
+                            {
+                                "type": "PI",
+                                "all": 2841202,
+                                "urban": 1787192,
+                                "countryside": 1054010
+                            },
+                            {
+                                "type": "CE",
+                                "all": 7418476,
+                                "urban": 5304554,
+                                "countryside": 2113922
+                            },
+                            {
+                                "type": "RN",
+                                "all": 2771538,
+                                "urban": 751064,
+                                "countryside": 860542
+                            },
+                            {
+                                "type": "PB",
+                                "all": 3439344,
+                                "urban": 2443590,
+                                "countryside": 995754
+                            },
+                            {
+                                "type": "PE",
+                                "all": 7911937,
+                                "urban": 6052930,
+                                "countryside": 1859007
+                            },
+                            {
+                                "type": "AL",
+                                "all": 2819172,
+                                "urban": 1917922,
+                                "countryside": 901250
+                            },
+                            {
+                                "type": "SE",
+                                "all": 1781714,
+                                "urban": 1271465,
+                                "countryside": 510249
+                            },
+                            {
+                                "type": "BA",
+                                "all": 13066910,
+                                "urban": 8761604,
+                                "countryside": 4305306
+                            }
+                        ]
+                    },
+
+                    {
+                        "type": "SE",
+                        "all": 72297351,
+                        "urban": 65441516,
+                        "countryside": 6855835,
+                        "state": [{
+                                "type": "MG",
+                                "all": 17866402,
+                                "urban": 14651164,
+                                "countryside": 3215238
+                            },
+                            {
+                                "type": "ES",
+                                "all": 3094390,
+                                "urban": 2460621,
+                                "countryside": 633769
+                            },
+                            {
+                                "type": "RJ",
+                                "all": 14367083,
+                                "urban": 13798096,
+                                "countryside": 568987
+                            },
+                            {
+                                "type": "SP",
+                                "all": 36969476,
+                                "urban": 34531635,
+                                "countryside": 2437841
+                            }
+                        ]
+
+                    },
+                    {
+                        "type": "S",
+                        "all": 25089783,
+                        "urban": 20306542,
+                        "countryside": 4783241,
+                        "state": [{
+                                "type": "PR",
+                                "all": 9558454,
+                                "urban": 7781664,
+                                "countryside": 1776790
+                            },
+                            {
+                                "type": "SC",
+                                "all": 5349580,
+                                "urban": 4211979,
+                                "countryside": 1137601
+                            },
+                            {
+                                "type": "RS",
+                                "all": 10181749,
+                                "urban": 8312899,
+                                "countryside": 1868850
+                            }
+                        ]
+                    },
+                    {
+                        "type": "CO",
+                        "all": 11616745,
+                        "urban": 10075212,
+                        "countryside": 1541533,
+                        "state": [{
+                                "type": "MS",
+                                "all": 2074877,
+                                "urban": 1744520,
+                                "countryside": 330357
+                            },
+                            {
+                                "type": "MT",
+                                "all": 2502260,
+                                "urban": 1985590,
+                                "countryside": 516670
+                            },
+                            {
+                                "type": "GO",
+                                "all": 4996439,
+                                "urban": 4390660,
+                                "countryside": 605779
+                            },
+                            {
+                                "type": "DF",
+                                "all": 2043169,
+                                "urban": 1954442,
+                                "countryside": 88727
+                            }
+                        ]
+
+                    }
+                ]
             },
             {
-                "name": "LionFish",
-                "antutu": [{
-                    "score": 147066,
-                    "cpu": 43042,
-                    "cpuScore": [{
-                        "mat": 11893,
-                        "com": 5788,
-                        "multi": 25361
-                    }],
-                    "gpu": 70767,
-                    "gpuScore": [{
-                        "marooned": 12690,
-                        "coastline": 28185,
-                        "refinery": 29892
-                    }],
-                    "ux": 28590,
-                    "uxScore": [{
-                        "security": 5159,
-                        "process": 5243,
-                        "picture": 5688,
-                        "user": 12500
-                    }],
-                    "mem": 4667
-                }]
-            },
-            {
-                "name": "Darkness",
-                "antutu": [{
-                    "score": 122553,
-                    "cpu": 32028,
-                    "cpuScore": [{
-                        "mat": 4903,
-                        "com": 2840,
-                        "multi": 24285
-                    }],
-                    "gpu": 64432,
-                    "gpuScore": [{
-                        "marooned": 9843,
-                        "coastline": 24601,
-                        "refinery": 29988
-                    }],
-                    "ux": 22428,
-                    "uxScore": [{
-                        "security": 2734,
-                        "process": 2672,
-                        "picture": 6676,
-                        "user": 10346
-                    }],
-                    "mem": 3665
-                }]
-            },
-            {
-                "name": "Impulse",
-                "antutu": [{
-                    "score": 146543,
-                    "cpu": 42790,
-                    "cpuScore": [{
-                        "mat": 12272,
-                        "com": 6018,
-                        "multi": 24500
-                    }],
-                    "gpu": 67974,
-                    "gpuScore": [{
-                        "marooned": 13071,
-                        "coastline": 24966,
-                        "refinery": 29937
-                    }],
-                    "ux": 31089,
-                    "uxScore": [{
-                        "security": 5021,
-                        "process": 4962,
-                        "picture": 8557,
-                        "user": 12549
-                    }],
-                    "mem": 4690
-                }]
-            },
-            {
-                "name": "Wheatley",
-                "antutu": [{
-                    "score": 104299,
-                    "cpu": 41771,
-                    "cpuScore": [{
-                        "mat": 12149,
-                        "com": 5849,
-                        "multi": 23773
-                    }],
-                    "gpu": 32013,
-                    "gpuScore": [{
-                        "marooned": 5164,
-                        "coastline": 13096,
-                        "refinery": 13753
-                    }],
-                    "ux": 25821,
-                    "uxScore": [{
-                        "security": 4746,
-                        "process": 4717,
-                        "picture": 4282,
-                        "user": 12076
-                    }],
-                    "mem": 4694
-                }]
-            },
-            {
-                "name": "Blu_Active",
-                "antutu": [{
-                    "score": 128632,
-                    "cpu": 42895,
-                    "cpuScore": [{
-                        "mat": 12222,
-                        "com": 5806,
-                        "multi": 24867
-                    }],
-                    "gpu": 53175,
-                    "gpuScore": [{
-                        "marooned": 10212,
-                        "coastline": 19419,
-                        "refinery": 23544
-                    }],
-                    "ux": 27735,
-                    "uxScore": [{
-                        "security": 5004,
-                        "process": 5079,
-                        "picture": 5570,
-                        "user": 12082
-                    }],
-                    "mem": 4827
-                }]
-            },
-            {
-                "name": "Nebula",
-                "antutu": [{
-                    "score": 130925,
-                    "cpu": 43382,
-                    "cpuScore": [{
-                        "mat": 12230,
-                        "com": 6007,
-                        "multi": 25145
-                    }],
-                    "gpu": 53998,
-                    "gpuScore": [{
-                        "marooned": 7179,
-                        "coastline": 19181,
-                        "refinery": 27638
-                    }],
-                    "ux": 28548,
-                    "uxScore": [{
-                        "security": 5183,
-                        "process": 5199,
-                        "picture": 5553,
-                        "user": 12613
-                    }],
-                    "mem": 4997
-                }]
-            },
-            {
-                "name": "Despair",
-                "antutu": [{
-                    "score": 144743,
-                    "cpu": 42523,
-                    "cpuScore": [{
-                        "mat": 11745,
-                        "com": 5786,
-                        "multi": 24992
-                    }],
-                    "gpu": 67910,
-                    "gpuScore": [{
-                        "marooned": 11686,
-                        "coastline": 25990,
-                        "refinery": 30234
-                    }],
-                    "ux": 28923,
-                    "uxScore": [{
-                        "security": 5111,
-                        "process": 5214,
-                        "picture": 5995,
-                        "user": 12603
-                    }],
-                    "mem": 5387
-                }]
-            },
-            {
-                "name": "Interactive",
-                "antutu": [{
-                    "score": 144676,
-                    "cpu": 42975,
-                    "cpuScore": [{
-                        "mat": 12195,
-                        "com": 5855,
-                        "multi": 24925
-                    }],
-                    "gpu": 65862,
-                    "gpuScore": [{
-                        "marooned": 12296,
-                        "coastline": 23650,
-                        "refinery": 29916
-                    }],
-                    "ux": 31053,
-                    "uxScore": [{
-                        "security": 5023,
-                        "process": 4960,
-                        "picture": 8647,
-                        "user": 12423
-                    }],
-                    "mem": 4786
-                }]
-            },
-            {
-                "name": "ConservativeX",
-                "antutu": [{
-                    "score": 143297,
-                    "cpu": 41670,
-                    "cpuScore": [{
-                        "mat": 11340,
-                        "com": 5759,
-                        "multi": 24571
-                    }],
-                    "gpu": 66041,
-                    "gpuScore": [{
-                        "marooned": 7411,
-                        "coastline": 28573,
-                        "refinery": 30057
-                    }],
-                    "ux": 30683,
-                    "uxScore": [{
-                        "security": 4828,
-                        "process": 4943,
-                        "picture": 8437,
-                        "user": 12475
-                    }],
-                    "mem": 4903
-                }]
-            },
-            {
-                "name": "Conservative",
-                "antutu": [{
-                    "score": 147107,
-                    "cpu": 41792,
-                    "cpuScore": [{
-                        "mat": 10921,
-                        "com": 5624,
-                        "multi": 25247
-                    }],
-                    "gpu": 72235,
-                    "gpuScore": [{
-                        "marooned": 13479,
-                        "coastline": 28710,
-                        "refinery": 30046
-                    }],
-                    "ux": 28167,
-                    "uxScore": [{
-                        "security": 4926,
-                        "process": 5069,
-                        "picture": 5608,
-                        "user": 12564
-                    }],
-                    "mem": 4913
-                }]
-            },
-            {
-                "name": "OnDemand",
-                "antutu": [{
-                    "score": 128399,
-                    "cpu": 43244,
-                    "cpuScore": [{
-                        "mat": 12137,
-                        "com": 6124,
-                        "multi": 24983
-                    }],
-                    "gpu": 50771,
-                    "gpuScore": [{
-                        "marooned": 6885,
-                        "coastline": 20039,
-                        "refinery": 23847
-                    }],
-                    "ux": 29214,
-                    "uxScore": [{
-                        "security": 5252,
-                        "process": 5322,
-                        "picture": 5650,
-                        "user": 12990
-                    }],
-                    "mem": 5170
-                }]
-            },
-            {
-                "name": "PowerSave",
-                "antutu": [{
-                    "score": 59421,
-                    "cpu": 9088,
-                    "cpuScore": [{
-                        "mat": 2323,
-                        "com": 1309,
-                        "multi": 5456
-                    }],
-                    "gpu": 37186,
-                    "gpuScore": [{
-                        "marooned": 6611,
-                        "coastline": 10748,
-                        "refinery": 19827
-                    }],
-                    "ux": 11398,
-                    "uxScore": [{
-                        "security": 1024,
-                        "process": 1017,
-                        "picture": 5381,
-                        "user": 3976
-                    }],
-                    "mem": 1749
-                }]
-            },
-            {
-                "name": "YankActive",
-                "antutu": [{
-                    "score": 146121,
-                    "cpu": 42942,
-                    "cpuScore": [{
-                        "mat": 12204,
-                        "com": 5787,
-                        "multi": 24951
-                    }],
-                    "gpu": 67201,
-                    "gpuScore": [{
-                        "marooned": 12525,
-                        "coastline": 24739,
-                        "refinery": 29937
-                    }],
-                    "ux": 31215,
-                    "uxScore": [{
-                        "security": 5135,
-                        "process": 5233,
-                        "picture": 8465,
-                        "user": 12382
-                    }],
-                    "mem": 4763
-                }]
-            },
-            {
-                "name": "BioShock",
-                "antutu": [{
-                    "score": 137622,
-                    "cpu": 42746,
-                    "cpuScore": [{
-                        "mat": 12030,
-                        "com": 6032,
-                        "multi": 24684
-                    }],
-                    "gpu": 61186,
-                    "gpuScore": [{
-                        "marooned": 7144,
-                        "coastline": 24052,
-                        "refinery": 29990
-                    }],
-                    "ux": 28707,
-                    "uxScore": [{
-                        "security": 5221,
-                        "process": 5304,
-                        "picture": 5564,
-                        "user": 12618
-                    }],
-                    "mem": 4983
-                }]
-            },
-            {
-                "name": "LionHeart",
-                "antutu": [{
-                    "score": 135262,
-                    "cpu": 42456,
-                    "cpuScore": [{
-                        "mat": 12141,
-                        "com": 6016,
-                        "multi": 24299
-                    }],
-                    "gpu": 59566,
-                    "gpuScore": [{
-                        "marooned": 7166,
-                        "coastline": 22473,
-                        "refinery": 29927
-                    }],
-                    "ux": 28343,
-                    "uxScore": [{
-                        "security": 5167,
-                        "process": 5262,
-                        "picture": 5568,
-                        "user": 12346
-                    }],
-                    "mem": 4897
-                }]
-            },
-            {
-                "name": "Perfomace",
-                "antutu": [{
-                    "score": 141646,
-                    "cpu": 43311,
-                    "cpuScore": [{
-                        "mat": 12202,
-                        "com": 5931,
-                        "multi": 25178
-                    }],
-                    "gpu": 62336,
-                    "gpuScore": [{
-                        "marooned": 7214,
-                        "coastline": 25322,
-                        "refinery": 29800
-                    }],
-                    "ux": 30807,
-                    "uxScore": [{
-                        "security": 5115,
-                        "process": 5101,
-                        "picture": 7347,
-                        "user": 13244
-                    }],
-                    "mem": 5192
-                }]
+                "date": [{
+                        "type": "BR",
+                        "dateOficial": 2010,
+                        "all": 190755799,
+                        "urban": 160925792,
+                        "countryside": 29830007
+                    },
+                    {
+                        "type": "N",
+                        "all": 15864454,
+                        "urban": 11664509,
+                        "countryside": 4199945,
+                        "state": [{
+                                "type": "RO",
+                                "all": 1562409,
+                                "urban": 1149180,
+                                "countryside": 413229
+                            },
+                            {
+                                "type": "AC",
+                                "all": 733559,
+                                "urban": 532279,
+                                "countryside": 201280
+                            },
+                            {
+                                "type": "AM",
+                                "all": 3483985,
+                                "urban": 2755490,
+                                "countryside": 728495
+                            },
+                            {
+                                "type": "RR",
+                                "all": 450479,
+                                "urban": 344859,
+                                "countryside": 105620
+                            },
+                            {
+                                "type": "PA",
+                                "all": 7581051,
+                                "urban": 5191559,
+                                "countryside": 2389492
+                            },
+                            {
+                                "type": "AP",
+                                "all": 669526,
+                                "urban": 601036,
+                                "countryside": 68490
+                            },
+                            {
+                                "type": "TO",
+                                "all": 1383445,
+                                "urban": 1090106,
+                                "countryside": 293339
+                            }
+                        ]
+                    },
+                    {
+                        "type": "NO",
+                        "all": 53081950,
+                        "urban": 38821246,
+                        "countryside": 14260704,
+                        "state": [{
+                                "type": "MA",
+                                "all": 6574789,
+                                "urban": 4147149,
+                                "countryside": 2427640
+                            },
+                            {
+                                "type": "PI",
+                                "all": 3118360,
+                                "urban": 2050959,
+                                "countryside": 1067401
+                            },
+                            {
+                                "type": "CE",
+                                "all": 8452381,
+                                "urban": 6346557,
+                                "countryside": 2105824
+                            },
+                            {
+                                "type": "RN",
+                                "all": 3168027,
+                                "urban": 2464991,
+                                "countryside": 703036
+                            },
+                            {
+                                "type": "PB",
+                                "all": 3766528,
+                                "urban": 2838678,
+                                "countryside": 927850
+                            },
+                            {
+                                "type": "PE",
+                                "all": 8796448,
+                                "urban": 7052210,
+                                "countryside": 1744238
+                            },
+                            {
+                                "type": "AL",
+                                "all": 3120494,
+                                "urban": 2297860,
+                                "countryside": 822634
+                            },
+                            {
+                                "type": "SE",
+                                "all": 2068017,
+                                "urban": 1520366,
+                                "countryside": 547651
+                            },
+                            {
+                                "type": "BA",
+                                "all": 14016906,
+                                "urban": 10102476,
+                                "countryside": 3914430
+                            }
+                        ]
+                    },
+
+                    {
+                        "type": "SE",
+                        "all": 80364410,
+                        "urban": 74696178,
+                        "countryside": 5668232,
+                        "state": [{
+                                "type": "MG",
+                                "all": 19597330,
+                                "urban": 16715216,
+                                "countryside": 2882114
+                            },
+                            {
+                                "type": "ES",
+                                "all": 3514952,
+                                "urban": 2931472,
+                                "countryside": 583480
+                            },
+                            {
+                                "type": "RJ",
+                                "all": 15989929,
+                                "urban": 15464239,
+                                "countryside": 525690
+                            },
+                            {
+                                "type": "SP",
+                                "all": 41262199,
+                                "urban": 39585251,
+                                "countryside": 1676948
+                            }
+                        ]
+
+                    },
+                    {
+                        "type": "S",
+                        "all": 27386891,
+                        "urban": 23260896,
+                        "countryside": 4125995,
+                        "state": [{
+                                "type": "PR",
+                                "all": 10444526,
+                                "urban": 8912692,
+                                "countryside": 1531834
+                            },
+                            {
+                                "type": "SC",
+                                "all": 6248436,
+                                "urban": 5247913,
+                                "countryside": 1000523
+                            },
+                            {
+                                "type": "RS",
+                                "all": 10693929,
+                                "urban": 9100291,
+                                "countryside": 1593638
+                            }
+                        ]
+                    },
+                    {
+                        "type": "CO",
+                        "all": 14058094,
+                        "urban": 12482963,
+                        "countryside": 1575131,
+                        "state": [{
+                                "type": "MS",
+                                "all": 2449024,
+                                "urban": 2097238,
+                                "countryside": 351786
+                            },
+                            {
+                                "type": "MT",
+                                "all": 3035122,
+                                "urban": 2482801,
+                                "countryside": 552321
+                            },
+                            {
+                                "type": "GO",
+                                "all": 6003788,
+                                "urban": 5420714,
+                                "countryside": 583074
+                            },
+                            {
+                                "type": "DF",
+                                "all": 2570160,
+                                "urban": 2482210,
+                                "countryside": 87950
+                            }
+                        ]
+
+                    }
+                ]
             }
         ]
+
     }]
 }
