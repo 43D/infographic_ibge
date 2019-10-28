@@ -81,9 +81,6 @@ $('#myRange').on('input', function() {
     for (let i = 0; i < json.responseJSON.demo[0].year.length; i++)
         if (json.responseJSON.demo[0].year[i] == $("#myRange").val())
             setConfig(json.responseJSON, i)
-
-
-
 });
 
 
