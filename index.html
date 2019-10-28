@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="css/css.css" rel="stylesheet" type="text/css" />
 
+
 </head>
 
 <body>
@@ -17,26 +18,9 @@
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
+                <ul class="navbar-nav mr-auto menuUl">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Dropdown
-                  </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                        </div>
-                    </li>
-                    <li>
-                        <a class="nav-link" href="#">Mais sobre</a>
+                        <a class="nav-link active firtsMap" href="#aa">Pop</a>
                     </li>
                 </ul>
             </div>
@@ -56,7 +40,68 @@
         <div class="container-fluid ">
             <div class="row">
                 <div class="jsmaps-wrapper col-5" id="brazil-map"></div>
-                <div class="col-7">oi</div>
+                <div class="col-7">
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-12">
+                                <h3 class="text-center">Brasil</h3>
+                            </div>
+                            <div class="col-4">
+                                <p class="text-left">População Total: <span id="ptb">0</span></p>
+                            </div>
+                            <div class="col-4">
+                                <p class="text-center">População Urbana: <span id="pub">0</span></p>
+                            </div>
+                            <div class="col-4">
+                                <p class="text-right">População Rural: <span id="prb">0</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-12">
+                                <h3 class="text-center">Regiões</h3>
+                            </div>
+                            <div class="col-4">
+                                <h5 class="text-center">Norte</h5>
+                                <p class="text-center mb-0">População Total: <span id="ptn">0</span></p>
+                                <p class="text-center mb-0">População Urbana: <span id="pun">0</span></p>
+                                <p class="text-center">População Rural: <span id="prn">0</span></p>
+                            </div>
+                            <div class="col-4">
+                                <h5 class="text-center">Nordeste</h5>
+                                <p class="text-center mb-0">População Total: <span id="ptno">0</span></p>
+                                <p class="text-center mb-0">População Urbana: <span id="puno">0</span></p>
+                                <p class="text-center">População Rural: <span id="prno">0</span></p>
+                            </div>
+                            <div class="col-4">
+                                <h5 class="text-center">Sudeste</h5>
+                                <p class="text-center mb-0">População Total: <span id="ptse">0</span></p>
+                                <p class="text-center mb-0">População Urbana: <span id="puse">0</span></p>
+                                <p class="text-center">População Rural: <span id="prse">0</span></p>
+                            </div>
+                            <div class="col-6">
+                                <h5 class="text-center">Sul</h5>
+                                <p class="text-center mb-0">População Total: <span id="pts">0</span></p>
+                                <p class="text-center mb-0">População Urbana: <span id="pus">0</span></p>
+                                <p class="text-center">População Rural: <span id="prs">0</span></p>
+                            </div>
+                            <div class="col-6">
+                                <h5 class="text-center">Centro-Oeste</h5>
+                                <p class="text-center mb-0">População Total: <span id="ptco">0</span></p>
+                                <p class="text-center mb-0">População Urbana: <span id="puco">0</span></p>
+                                <p class="text-center">População Rural: <span id="prco">0</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="col-12">
+                        <h3 class="text-center">Estado</h3>
+                        <p class="text-center"><span class="estadoAtivo">Selecione um estado</span></p>
+
+                    </div>
+                </div>
             </div>
         </div>
     </main>
@@ -84,3 +129,23 @@
 </body>
 
 </html>
+
+
+<!--
+
+    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropdown
+                  </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+
+                     <li>
+                        <a class="nav-link" href="#">Mais sobre</a>
+                    </li>
+-->
