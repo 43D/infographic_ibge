@@ -1,3 +1,9 @@
+//eventos
+$('.hidden2').hide();
+
+
+//
+
 var json = $.getJSON("https://raw.githubusercontent.com/43D/infographic_ibge/master/js/ibge.json", function(json) {
     main(json)
 });
@@ -14,12 +20,16 @@ function loadMap() {
         "displayAbbreviationOnDisabledStates": false,
         "stateClickAction": "",
         "preloaderText": "Carregando mapa...",
-        "selectElement": true
+        "selectElement": true,
+        onStateClick: function(data) {
+            setState(data.abbreviation, data.name);
+        }
     });
 }
 
 function reloadMap() {
     $('#brazil-map').empty();
+    // remover Dados de Estado
     loadMap();
 }
 
@@ -70,7 +80,27 @@ function setConfig(json, id) {
     $('#prco').html(json.demo[0].data[id].date[5].countryside.toLocaleString());
 }
 
+function setState(uf, name) {
+    $('.hidden1').html(uf);
+    $('.hidden1').hide();
+    $('.hidden2').show();
+    $('.ufSelect').html(name);
+    for (let i = 0; i < json.responseJSON.demo[0].year.length; i++)
+        if (json.responseJSON.demo[0].year[i] == $("#myRange").val())
+            setStateDate(json.responseJSON, i, uf)
+}
 
+function setStateDate(json, id, uf) {
+    for (let i = 1; i < json.demo[0].data[id].date.length; i++) {
+        for (let j = 0; j < json.demo[0].data[id].date[i].state.length; j++) {
+            if (json.demo[0].data[id].date[i].state[j].type == uf) {
+                $('#ptuf').html(json.demo[0].data[id].date[i].state[j].all.toLocaleString());
+                $('#puuf').html(json.demo[0].data[id].date[i].state[j].urban.toLocaleString());
+                $('#pruf').html(json.demo[0].data[id].date[i].state[j].countryside.toLocaleString());
+            }
+        }
+    }
+}
 
 
 // Set Range Number
@@ -79,8 +109,12 @@ $('#myRange').on('input', function() {
     $('.rangeNumber').html($("#myRange").val());
     //set json
     for (let i = 0; i < json.responseJSON.demo[0].year.length; i++)
-        if (json.responseJSON.demo[0].year[i] == $("#myRange").val())
-            setConfig(json.responseJSON, i)
+        if (json.responseJSON.demo[0].year[i] == $("#myRange").val()) {
+            setConfig(json.responseJSON, i);
+            if ($('.hidden1').css('display') == 'none') {
+                setStateDate(json.responseJSON, i, $('.hidden1').html());
+            }
+        }
 });
 
 
