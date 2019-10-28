@@ -6,15 +6,12 @@
             "name": "População brasileira",
             "range": true,
             "rangeStart": 1970,
-            "rangeEnd": 2010,
-            "id": "0"
+            "rangeEnd": 2010
         },
         {
             "name": "População por sexo",
-            "range": true,
-            "rangeStart": 1970,
-            "rangeEnd": 2010,
-            "id": "1"
+            "range": false,
+            "rangeEnd": 2010
         }
     ],
 
