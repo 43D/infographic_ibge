@@ -20,5 +20,6 @@ function removeMap() {
 $(function() { loadMap(); });
 
 function setColor(hex, estado) {
+    var a = 1;
     return this;
 }
