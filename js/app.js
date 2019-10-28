@@ -101,8 +101,6 @@ function setStateDate(json, id, uf) {
         }
     }
 }
-
-
 // Set Range Number
 $('.rangeNumber').html($("#myRange").val());
 $('#myRange').on('input', function() {
@@ -116,27 +114,3 @@ $('#myRange').on('input', function() {
             }
         }
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-function setColor(hex, estado) {
-    return this;
-}
