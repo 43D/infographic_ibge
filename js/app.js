@@ -2,34 +2,15 @@
 $('.hidden2').hide();
 
 
-//
+// recupera Json
+var json = {};
 
-var json = $.getJSON("https://raw.githubusercontent.com/43D/infographic_ibge/master/js/ibge.json", function(json) {
-    main(json)
+$.getJSON("js/ibge.json", function(data) {
+    json = data;
+    main(data)
 });
 
-function loadJSON(callback) {
-
-    var xobj = new XMLHttpRequest();
-    xobj.overrideMimeType("application/json");
-    xobj.open('GET', 'js/ibge.json', true); // Replace 'my_data' with the path to your file
-    xobj.onreadystatechange = function() {
-        if (xobj.readyState == 4 && xobj.status == "200") {
-            callback(xobj.responseText);
-        }
-    };
-    xobj.send(null);
-}
-
-function init() {
-    loadJSON(function(response) {
-
-        var actual_JSON = JSON.parse(response);
-        console.log(actual_JSON);
-    });
-}
-console.log(json);
-
+//Map companions
 function loadMap() {
     $('#brazil-map').JSMaps({
         map: 'brazil',
@@ -68,10 +49,7 @@ function main(json) {
             "max": json.menu[0].rangeEnd
         });
     }
-
     setConfig(json, json.demo[0].year.length - 1);
-
-
     loadMap();
 }
 
@@ -106,9 +84,9 @@ function setState(uf, name) {
     $('.hidden1').hide();
     $('.hidden2').show();
     $('.ufSelect').html(name);
-    for (let i = 0; i < json.responseJSON.demo[0].year.length; i++)
-        if (json.responseJSON.demo[0].year[i] == $("#myRange").val())
-            setStateDate(json.responseJSON, i, uf)
+    for (let i = 0; i < json.demo[0].year.length; i++)
+        if (json.demo[0].year[i] == $("#myRange").val())
+            setStateDate(json, i, uf)
 }
 
 function setStateDate(json, id, uf) {
@@ -127,11 +105,11 @@ $('.rangeNumber').html($("#myRange").val());
 $('#myRange').on('input', function() {
     $('.rangeNumber').html($("#myRange").val());
     //set json
-    for (let i = 0; i < json.responseJSON.demo[0].year.length; i++)
-        if (json.responseJSON.demo[0].year[i] == $("#myRange").val()) {
-            setConfig(json.responseJSON, i);
+    for (let i = 0; i < json.demo[0].year.length; i++)
+        if (json.demo[0].year[i] == $("#myRange").val()) {
+            setConfig(json, i);
             if ($('.hidden1').css('display') == 'none') {
-                setStateDate(json.responseJSON, i, $('.hidden1').html());
+                setStateDate(json, i, $('.hidden1').html());
             }
         }
 });
