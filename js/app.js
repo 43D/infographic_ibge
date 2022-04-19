@@ -5,7 +5,7 @@ $('.hidden2').hide();
 // recupera Json
 var json = {};
 
-$.getJSON("js/ibge.json", function(data) {
+$.getJSON("./json/ibge.json", function(data) {
     json = data;
     main(data)
 });
